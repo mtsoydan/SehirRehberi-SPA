@@ -4,4 +4,5 @@ export class Photo {
     dateAdded : string;
     userId:number;
     photos:Photo[];
+    
 }
