@@ -9,6 +9,7 @@ import { CityService } from "../services/city.service";
   providers: [CityService]
 })
 export class CityComponent implements OnInit {
+  //city servicenin instance ını olusturuyoruz
   constructor(private cityService: CityService) {}
 
   cities: City[];

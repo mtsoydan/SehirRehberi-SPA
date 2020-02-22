@@ -7,17 +7,25 @@ import { ValueComponent } from './value/value.component';
 import { from } from 'rxjs';
 import { NavComponent } from './nav/nav.component';
 import { CityComponent } from './city/city.component';
+import {RouterModule} from '@angular/router';
+import {appRoutes} from './routes';
+import { CityDetailComponent } from './city/city-detail/city-detail.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       ValueComponent,
       NavComponent,
-      CityComponent
+      CityComponent,
+      CityDetailComponent
+   
    ],
    imports: [
       BrowserModule,
-      HttpClientModule
+      HttpClientModule,
+      //Buraya gerekli olan route importu yapılır
+      RouterModule.forRoot(appRoutes)
+
    ],
    providers: [],
    bootstrap: [
