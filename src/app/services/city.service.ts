@@ -24,6 +24,6 @@ getCityByID(cityID:number):Observable<City>{
 
 getPhotosByCity(cityID:number):Observable<Photo[]>
 {
-  return this.httpClient.get<Photo[]>(this.path+"photos/?cityId="+cityID)
+  return this.httpClient.get<Photo[]>(this.path+"photos/"+cityID)
 }
 }

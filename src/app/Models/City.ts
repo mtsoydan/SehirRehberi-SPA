@@ -5,7 +5,6 @@ export class City {
     name:string;
     description:string;
     userId :number;
-    photoUrl:string;
     photos : Photo[];
 
 }

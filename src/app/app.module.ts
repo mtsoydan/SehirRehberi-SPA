@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
-
+import {NgxGalleryModule} from 'ngx-gallery'
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { from } from 'rxjs';
@@ -24,7 +24,9 @@ import { CityDetailComponent } from './city/city-detail/city-detail.component';
       BrowserModule,
       HttpClientModule,
       //Buraya gerekli olan route importu yapılır
-      RouterModule.forRoot(appRoutes)
+      RouterModule.forRoot(appRoutes),
+      NgxGalleryModule
+
 
    ],
    providers: [],

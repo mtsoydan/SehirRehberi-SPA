@@ -3,6 +3,6 @@ export class Photo {
     cityId:number;
     dateAdded : string;
     userId:number;
-    photos:Photo[];
+    url:string;
     
 }
